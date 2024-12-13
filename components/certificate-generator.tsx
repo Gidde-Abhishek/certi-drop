@@ -956,7 +956,7 @@ useEffect(() => {
   // Handlers
   const handleGoogleLogin = async () => {
     try {
-      const response = await fetch('/api/auth');
+      const response = await fetch('api/auth/google');
       const data = await response.json();
       if (data.url) {
         window.location.href = data.url;
